@@ -13,11 +13,11 @@ const Home = () => {
             Welcom<span className='green'>e</span>, <br/>
             <span className='green'>I</span>'m <span className='green'>R</span>aphael Honigstei<span className='green'>n</span>,<br/>
             <span className='green'>F</span>rench  <span className='green'>W</span>eb <span className='green'>D</span>eveloper, <br/>
-            <span className='green'>F</span>ull Stack JavaScript .
+            <span className='green'>F</span>ull Stack <span className='javascript'> JavaScript</span> .
         </p>
 
         <div className='home-profil'>
-            <img className='home-pic' src={raphael} alt="Raphael"/>
+            <img className='home-pic' src={raphael} alt="Panda"/>
         </div>
         
     </div>
