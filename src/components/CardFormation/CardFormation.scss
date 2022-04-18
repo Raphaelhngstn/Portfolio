@@ -1,0 +1,67 @@
+
+.card-formation{
+    position: relative;
+    margin: auto;
+    background-color: white;
+    opacity: 0.85;
+    width: 40%;
+    padding: 1rem 0 0;
+    margin: 2rem;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+
+    &-image {
+        position: absolute;
+        top: -18%;
+        margin: auto;
+        width: 40%;
+        left: 29%;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 2px;
+    }
+
+    &-logo{
+        margin: auto;
+        width: 100%;
+    }
+
+    &-texte {
+        margin: 2.5rem 0 0;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        padding: 0.5rem 3.5rem;
+        line-height: 135%;
+        font-size: 17px;
+        text-shadow: -1px 0 white, 0 3px white, 1px 0 white, 0 -1px white;
+
+    }
+
+
+    &-texte2 {
+        font-size: 28px;
+        margin: 1rem 0 0;
+        padding: 1rem 0;
+        font-style: italic;
+        line-height: 130%;
+        background: green;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+        //-webkit-text-stroke: 1px black;
+    }
+}
+
+    
+
+
+    
+
+    
+
+

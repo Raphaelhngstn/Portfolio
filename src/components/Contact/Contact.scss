@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.contact {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 40%;
+    margin: 3rem auto;
+    min-height: 400px;
+    border-radius: 5px;
+    padding: 0 1.5rem;
+
+    &-subtitle {
+        font-style: italic;
+        text-align: center;
+        width: 150px;
+        position: absolute;
+        top: -5%;
+        right: 15%;
+        padding: 1rem;
+        font-size: 22px;
+    }
+
+    &-form {
+        text-align: center;
+        width: 90%;
+        font-size: 26px;
+        line-height: 150%;
+        margin: 3rem auto;
+        font-style: italic;
+    } 
+    
+    &-form-group{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto;
+         
+        &-name {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 1rem;
+        }
+    }
+
+    &-input {
+        width: 80%;
+        padding: 0.5rem;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    &-inputarea {
+        min-height: 200px;
+        font-size: 20px;
+        resize: none;
+    }
+
+    &-label {
+        font-size: 22px;
+        text-align: center;
+        margin: auto 2rem;
+        max-width: 100px;
+        padding: 0;
+    }
+
+    &-name {
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-style: italic;
+        padding: 0.5rem 0.25rem;
+        position: absolute;
+        background-color: white;
+        color: black;
+        bottom: -3%;
+        right: 4%;
+        padding: 1rem;
+        color: black;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+
+    &-mail {
+        position: absolute;
+        width: 90px;
+        top: -8.5%;
+        right: 4%;
+    }
+
+}

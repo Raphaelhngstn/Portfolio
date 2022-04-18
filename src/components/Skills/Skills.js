@@ -1,5 +1,5 @@
 import './Skills.scss';
-import React from 'react';
+import React, { useEffect } from 'react';
 import html5 from '../../images/html-5.png';
 import css3 from '../../images/css-3.png';
 import js from '../../images/js.png';
@@ -8,13 +8,24 @@ import sass from '../../images/sass.png';
 import react from '../../images/react.png';
 import pgsql from '../../images/pgsql.png';
 import redux from '../../images/redux.png';
+import Spinner from '../Spinner/Spinner';
+import { useState } from 'react';
 
 const Skills = () => {
 
+    const [spinner, setSpinner] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setSpinner(false);
+        }, 1400);
+    },[])
+
     return (
-    <div className="skill">
+        spinner ? <Spinner/> :
+        <div className="skill">
         <p className='skill-subtitle'>
-            <span className='blue'> &lt;h1&gt; </span> My Skills !<span className='blue'> &lt;/h1&gt; </span>
+            My Skills
         </p>
         
         <img className='skill-html' src={html5} alt='logo html'/>

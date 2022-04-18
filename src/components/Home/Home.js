@@ -1,13 +1,24 @@
 import './Home.scss';
-import React from 'react';
+import React, { useEffect } from 'react';
 import raphael from '../../images/RaphaelSinge.webp';
+import { useState } from 'react';
+import Spinner from '../Spinner/Spinner';
+import voyage from '../../images/voyage.png';
 
 const Home = () => {
+    const [spinner, setSpinner] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setSpinner(false);
+        }, 1400);
+    },[])
 
     return (
+    spinner ? <Spinner/> :
     <div className="home">
         <p className='home-subtitle'>
-            <span className='blue'> &lt;h1&gt; </span>  Hello World !<span className='blue'> &lt;/h1&gt; </span>
+              Hello World !
         </p>
         <p className='home-content'>
             Welcom<span className='green'>e</span>, <br/>
@@ -19,8 +30,9 @@ const Home = () => {
         <div className='home-profil'>
             <img className='home-pic' src={raphael} alt="Panda"/>
         </div>
-        
+        <img className='home-voyage' alt='avion' src={voyage}/>
     </div>
+    
 
     )
 };
