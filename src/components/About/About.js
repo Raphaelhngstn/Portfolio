@@ -40,10 +40,10 @@ const About = () => {
         
        
 
-        <img className='about-videoG' alt='manette' src={videoG}/>
+        {/* <img className='about-videoG' alt='manette' src={videoG}/>
         <img className='about-voyage' alt='avion' src={voyage}/>
         <img className='about-panda' alt='panda' src={panda} />
-        <img className='about-soleil' alt='soleil' src={soleil} />
+        <img className='about-soleil' alt='soleil' src={soleil} /> */}
         
         
     </div>

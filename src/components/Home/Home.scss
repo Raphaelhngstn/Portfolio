@@ -50,26 +50,31 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 80%;
+    width: 90%;
+    
 
     &-title{
         display: flex;
         justify-content: center;
         margin: 2rem auto;
+        
     }
 
     &-subtitle {        
         margin: auto 0.5rem;
         text-align: center;
-        font-size: 50px;
+        font-size: 42px;
         font-weight: bold;
         font-style: italic;        
         padding: 0.5rem 2rem;
     }
 
     &-content {
+        
         display: flex;
+        justify-content: center;
         margin: 3rem auto;
+        width: 70%;
     }
 
     &-profil {        
@@ -90,37 +95,62 @@
     &-text {  
         width: 50%; 
         text-align: center;
-        margin: auto 2rem;
-        font-size: 42px;
+        margin:auto;
+        font-size: 32px;
         line-height: 150%;
     }
 
    
 }
 
-// @media only screen and (max-width: 420px) {
-//     .home{
-//         width: 100%;
+@media only screen and (max-width: 768px) {
+    .home{
 
-//         &-title{
-//             display: flex;
-//             justify-content: center;
-//             margin: auto;
-//         }
+        width: 100%;
 
-//         &-subtitle{
-//             font-size: 22px;
-//             width: 80%;
-//         }
+        &-title{
 
-//         &-content {
-//             display: flex;
-//             flex-direction: column;
-//             margin: 3rem auto;
-//             width: 80%;
-//         }
+            display: none;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // width: 90%;
+            // margin: 1rem auto 0;
+        }
 
-//     }
+        &-voyage {
+            margin: 0.25rem 0 1rem;
+            width: 30%;
+        }
+
+        &-subtitle{
+            margin: 1rem 0 0.25rem;
+            font-size: 28px;
+            max-width: 70%;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        &-text{
+            font-size: 28px;
+            width: 90%;
+            margin: 1rem 0;
+        }
+
+        &-profil {
+            margin: 1rem auto 3rem;
+        }
+        &-pic {
+            width: 70%;
+        }
+
+    }
     
-// }
+}
 
