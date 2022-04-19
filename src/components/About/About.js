@@ -23,30 +23,40 @@ const About = () => {
     spinner ? <Spinner/> :
     <div className="about">
 
-        <div className='about-profil'>
-        <img className='about-pic' src={profil} alt="Raphael"/>
-        </div>
-        <h2 className='about-subtitle'>
+        <h2 className='about-subtitle javascript'>
             About me
         </h2>
-        <p className='about-content'>
-        <span className='green'>P</span>assionate about computers, code and video games. <span className='green'>I</span> <span className='javascript'>decided to make it my job.</span> <br/>
-        <span className='green'>A</span>nimals, sport and travel are part of my life. 
-        </p>
 
-        <p className='about-name'>
-        <span className='green'>H</span>onigstein <span className='green'>R</span>aphael - <span className='green'>A</span>ge : 30 - <span className='green'>L</span>evel : Junior
-        </p>
+        <div className='about-content'>
+
+            <div className='about-profil'>
+
+                <img className='about-pic' src={profil} alt="Raphael"/>
+
+            </div>
+
+            
+            <p className='about-text'>
+                <span className='green'>P</span>assionate about computers, code and video games. <span className='green'>I</span> <span className='javascript'>decided to make it my job.</span> <br/>
+                <span className='green'>A</span>nimals, sport and travel are part of my life. 
+            </p>
+
+            
         
-       
+        </div>
 
         {/* <img className='about-videoG' alt='manette' src={videoG}/>
         <img className='about-voyage' alt='avion' src={voyage}/>
         <img className='about-panda' alt='panda' src={panda} />
         <img className='about-soleil' alt='soleil' src={soleil} /> */}
-        
+
+        <p className='about-name'>
+            <span className='green'>H</span>onigstein <span className='green'>R</span>aphael - <span className='green'>A</span>ge : 30 - <span className='green'>L</span>evel : Junior
+        </p>
         
     </div>
+
+    
 
     )
 };
