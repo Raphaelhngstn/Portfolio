@@ -4,6 +4,10 @@
     margin: 1rem auto;
     width: 90%;
 
+    &-hamburger {
+        display: none;
+    }
+
    &-links {
        display: inline-block;
        margin-left: auto;
@@ -68,10 +72,15 @@
 
   @media only screen and (max-width: 768px) {
     .header {
+        position: relative;
         display: flex;
-        align-items: center;
-        margin: 1rem auto;
-        width: 80%;
+        justify-content: space-around;
+        margin: auto;
+
+        &-hamburger {
+            display:inline-block;
+            margin: 0;
+        }
     
        &-links {
            display: none;
@@ -85,16 +94,42 @@
             text-transform: uppercase;
             
         }
+
+        &-links-mobile {
+            position: absolute;
+            // position: fixed;
+            top: 100%;
+            width: 105%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 5px;
+            border: 3px solid green;
+        }
+     
+         &-link-mobile {
+             color: black;
+             text-decoration: none;
+             font-size: 26px;
+             font-weight: bolder;
+             text-transform: uppercase;
+             padding: 1.65rem 1rem;
+             border: 1px solid black;
+             font-style: italic;
+         }
     
     
     }
 
     .logo {
-        margin: auto;
-        width: 60%;
+        margin: 0;
+        width:45%;
         cursor: pointer;
         background-color: black;
         border-radius: 50%;
-        opacity: 0.8;
+    }
+
+    .logo:hover {
+        transform: none;
     }
   }
