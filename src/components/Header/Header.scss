@@ -18,7 +18,7 @@
         color: white;
         margin: auto 1rem;
         text-decoration: none;
-        font-size: 28px;
+        font-size: 24px;
         text-transform: uppercase;
         
     }
@@ -44,7 +44,7 @@
 .header-green {
     color: green;
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .header-link {
@@ -97,33 +97,42 @@
 
         &-links-mobile {
             position: absolute;
-            // position: fixed;
             top: 100%;
-            width: 105%;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            background-color: white;
+            background-color: rgb(0, 0, 0);
             border-radius: 5px;
-            border: 3px solid green;
+            border: 3px solid white;
         }
      
          &-link-mobile {
-             color: black;
+             color: whitesmoke;
              text-decoration: none;
-             font-size: 26px;
+             font-size: 22px;
              font-weight: bolder;
              text-transform: uppercase;
-             padding: 1.65rem 1rem;
-             border: 1px solid black;
+             padding: 1.45rem 2rem;
+             border-bottom: 0.1px solid white;
              font-style: italic;
          }
+
+         &-link-mobile1 {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            padding: 1.45rem 2rem;
+            font-style: italic;
+        }
     
     
     }
 
     .logo {
         margin: 0;
-        width:45%;
+        width:40%;
         cursor: pointer;
         background-color: black;
         border-radius: 50%;

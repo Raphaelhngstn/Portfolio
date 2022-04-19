@@ -17,34 +17,43 @@ const Contact = () => {
 
   return (
     spinner ? <Spinner/> :
-    <div className='contact'>    
-        <h2 className='contact-subtitle '>
-            CONTACT
+
+    <div className='contact'>
+
+        <h2 className='contact-subtitle javascript '>
+            Contact
         </h2>
 
         <form className='contact-form'>
+
             <div className="contact-form-group-name">
+
                     <label  className="contact-label javascript">
                         Name
                     </label>
+
                     <input
                         type="text"
                         className="contact-input"
                         required="required"
                     />
             </div>
-            
+
             <div className="contact-form-group">
+
                     <label  className="contact-label javascript">
                         E-mail
                     </label>
+
                     <input
                         type="email"
                         className="contact-input"
                         required="required"
                     />
+
             </div>
-        <div className="contact-form-group">
+
+            <div className="contact-form-group">
                     <label  className="contact-label javascript">
                         Subject
                     </label>
@@ -53,11 +62,15 @@ const Contact = () => {
                         className="contact-inputarea"
                         required="required"
                     />
-        </div>
-        <button className='contact-name'> <span className='green'>S</span>end <span className='green'>M</span>essage </button>
+            </div>
+
+            <button className='contact-name'> 
+                <span className='green'>S</span>end <span className='green'>M</span>essage 
+            </button>
+
         </form>
 
-        <img className='contact-mail' src={mail} alt='logo mail'/>
+        {/* <img className='contact-mail' src={mail} alt='logo mail'/> */}
     </div>
 
   )

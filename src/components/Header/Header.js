@@ -26,6 +26,7 @@ const Header = () => {
         
             <img onClick={handleLogo} className="logo" src={logo} alt='logo'/>
             <div className="header-links">
+                <a className="header-link" href="/"><span className='header-green'>H</span>ome</a>
                 <a className="header-link" href="/about"><span className='header-green'>A</span>bout</a>
                 <a className="header-link" href="/skills"><span className='header-green'>S</span>kills</a>
                 <a className="header-link" href="/formation"><span className='header-green'>F</span>ormations</a>
@@ -48,12 +49,12 @@ const Header = () => {
              {
                  isOpen && 
                  <div className="header-links-mobile">
-                     <a className="header-link-mobile" href="/"><span className='header-green'>H</span>ome</a>
-                    <a className="header-link-mobile" href="/about"><span className='header-green'>A</span>bout</a>
-                    <a className="header-link-mobile" href="/skills"><span className='header-green'>S</span>kills</a>
-                    <a className="header-link-mobile" href="/formation"><span className='header-green'>F</span>ormations</a>
-                    <a className="header-link-mobile" href="/formation"><span className='header-green'>P</span>ortfolio</a>
-                    <a className="header-link-mobile" href="/contact"><span className='header-green'>C</span>ontact</a>
+                    <a className="header-link-mobile" href="/">- <span className='header-green'>H</span>ome </a>
+                    <a className="header-link-mobile" href="/about">- <span className='header-green'>A</span>bout</a>
+                    <a className="header-link-mobile" href="/skills">- <span className='header-green'>S</span>kills</a>
+                    <a className="header-link-mobile" href="/formation">- <span className='header-green'>F</span>ormations</a>
+                    <a className="header-link-mobile" href="/formation">- <span className='header-green'>P</span>ortfolio</a>
+                    <a className="header-link-mobile1" href="/contact">- <span className='header-green'>C</span>ontact</a>
                 </div>
              }
         
