@@ -23,22 +23,22 @@ const Skills = () => {
 
     return (
         spinner ? <Spinner/> :
-        <div className="skill">
-        <p className='skill-subtitle'>
-            My Skills
-        </p>
-        
-        <img className='skill-html' src={html5} alt='logo html'/>
-        <img className='skill-css' src={css3} alt='logo css'/>
-        <img className='skill-js' src={js} alt='logo js'/>
-        <img className='skill-node' src={node} alt='logo node'/>
-        <img className='skill-sass' src={sass} alt='logo sass'/>
-        <img className='skill-react' src={react} alt='logo react'/>
-        <img className='skill-pgsql' src={pgsql} alt='logo pgsql'/>
 
-        <img className='skill-redux' src={redux} alt='logo redux'/>
-        
-    </div>
+        <div className="skill">
+            <p className='skill-subtitle javascript'>
+            My Skills
+            </p>
+            <div className='skill-content'>
+                <img className='skill-js' src={js} alt='logo js'/>
+                <img className='skill-node' src={node} alt='logo node'/>
+                <img className='skill-css' src={css3} alt='logo css'/>
+                <img className='skill-sass' src={sass} alt='logo sass'/>
+                <img className='skill-react' src={react} alt='logo react'/>
+                <img className='skill-html' src={html5} alt='logo html'/>
+                <img className='skill-redux' src={redux} alt='logo redux'/>            
+                <img className='skill-pgsql' src={pgsql} alt='logo pgsql'/>
+            </div>        
+        </div>
 
     )
 };

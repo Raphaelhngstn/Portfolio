@@ -35,6 +35,12 @@
     background-color: black;
     border-radius: 50%;
     opacity: 0.8;
+
+    
+}
+
+.logo-mobile{
+    display: none;
 }
 
 .logo:hover {
@@ -74,12 +80,15 @@
     .header {
         position: relative;
         display: flex;
-        justify-content: space-around;
-        margin: auto;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        border-bottom: 0.5px solid white;
+        
 
         &-hamburger {
             display:inline-block;
             margin: 0;
+            margin-right: 1rem;
         }
     
        &-links {
@@ -131,14 +140,27 @@
     }
 
     .logo {
-        margin: 0;
-        width:40%;
-        cursor: pointer;
-        background-color: black;
-        border-radius: 50%;
+        display: none;
+        // margin: 0;
+        // margin-left: 1rem;
+        // width:35%;
+        // cursor: pointer;
+        // background-color: black;
+        // border-radius: 50%;
+    }
+
+    .logo-mobile{
+        display:inline-block;
+        font-size: 28px;
     }
 
     .logo:hover {
         transform: none;
     }
+
+    .green-name{
+        font-weight: bold;
+        color: green;
+    }
   }
+

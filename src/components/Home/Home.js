@@ -4,6 +4,7 @@ import raphael from '../../images/RaphaelSinge.webp';
 import { useState } from 'react';
 import Spinner from '../Spinner/Spinner';
 import voyage from '../../images/voyage.png';
+import logo from '../../images/logo.svg';
 
 const Home = () => {
     const [spinner, setSpinner] = useState(true);
@@ -19,7 +20,9 @@ const Home = () => {
         <div className="home">
 
             <div className="home-title">
-                
+                <div className='home-profil-logo'>
+                    <img className='home-logo' src={logo} alt="Panda"/>
+                </div>
                 <p className='home-subtitle javascript'>
                     Hello World !
                 </p>
@@ -38,7 +41,6 @@ const Home = () => {
 
 
                 <div className='home-profil'>
-
                     <img className='home-pic' src={raphael} alt="Panda"/>
                 </div>
 

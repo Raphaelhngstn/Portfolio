@@ -25,6 +25,7 @@ const Header = () => {
         <div className="header">
         
             <img onClick={handleLogo} className="logo" src={logo} alt='logo'/>
+            <p className="logo-mobile"> <span className='green-name'>R</span>aphael <span className='green-name'>H</span>onigstein</p>
             <div className="header-links">
                 <a className="header-link" href="/"><span className='header-green'>H</span>ome</a>
                 <a className="header-link" href="/about"><span className='header-green'>A</span>bout</a>

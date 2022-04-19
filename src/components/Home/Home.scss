@@ -85,6 +85,12 @@
     &-voyage {
         width: 15%;
     }
+    &-logo{
+        display: none;
+    }
+    &-profil-logo{
+        display: none;
+    }
 
     &-pic {
         width: 50%;
@@ -145,8 +151,19 @@
         &-profil {
             margin: 1rem auto 3rem;
         }
+
+        &-profil-logo {
+           display: contents;
+        }
         &-pic {
             width: 70%;
+        }
+
+        &-logo{
+            display: inline-flex;
+            width: 50%;
+            margin: 0.5rem;
+            background-color: black;
         }
 
     }
