@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import Contact from '../Contact/Contact';
 import Formation from '../Formation/Formation';
 import Portfolio from '../Portfolio/Portfolio';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (  
@@ -20,7 +21,7 @@ function App() {
         <Route path="/formation" element={<Formation/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
       </Routes>
-      
+      <Footer/>
     </div>
   );
 }

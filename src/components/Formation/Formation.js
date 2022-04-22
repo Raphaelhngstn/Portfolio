@@ -38,7 +38,7 @@ const Formation = () => {
             <div className="formation-bloc">
                 <img className='formation-toeic' src={toeic} alt="Panda"/>
                 <p className='formation-title'>
-                Test of English for International Communication  2019
+                Test of English <br/>for International<br/> Communication  2019
                 </p>
 
                 <p className='formation-detail'>

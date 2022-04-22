@@ -24,6 +24,9 @@ const Contact = () => {
             Contact
         </h2>
 
+        <p className='contact-text'> Need more information? Please feel free to contact me and discuss...
+        </p>
+
         <form className='contact-form'>
 
             <div className="contact-form-group-name">

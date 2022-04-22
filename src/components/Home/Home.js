@@ -1,6 +1,6 @@
 import './Home.scss';
 import React, { useEffect } from 'react';
-import raphael from '../../images/RaphaelSinge.webp';
+import raphael from '../../images/pandaCode.png';
 import { useState } from 'react';
 import Spinner from '../Spinner/Spinner';
 import voyage from '../../images/voyage.png';
