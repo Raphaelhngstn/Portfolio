@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import Spinner from '../Spinner/Spinner';
 import panda from '../../images/panda.png';
+import Footer from '../Footer/Footer';
 
 const Portfolio = () => {
     const [spinner, setSpinner] = useState(true);
@@ -44,7 +45,7 @@ const Portfolio = () => {
 
                 
             </div>
-            
+            <Footer/>
         </div>
 
     )

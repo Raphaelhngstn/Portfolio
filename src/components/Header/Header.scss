@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Press+Start+2P&display=swap');
 
 .header {
     display: flex;
     align-items: center;
     margin: 1.5rem auto;
-    width: 100%;
 
     &-hamburger {
         display: none;
@@ -43,7 +42,7 @@
         min-width: 100px;
         text-align: center;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 24px;
         text-transform: uppercase;
     }
 
@@ -72,8 +71,12 @@
 
 .header-green {
     color: green;
+    font-size: 28px;
     font-weight: bolder;
-    font-size: 24px;
+}
+
+.header-links-mobile {
+    display: none;
 }
 
 .header-link {
@@ -101,7 +104,7 @@
 
   
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 960px) {
     .header {
         position: relative;
         display: flex;
@@ -140,40 +143,78 @@
         }
 
         &-links-mobile {
-            animation-name: slideDownFadeIN;
-            animation-duration: 0.5s;
-            text-align: center;
+
             position: absolute;
-            top: 100%;
-            width: 98%;
-            display: flex;
+            top: 0;
+            margin-top: 76px;
+            left: 0;
             flex-direction: column;
-            background-color: white;
-            border-radius: 5px;
-            border: 3px solid green;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+             animation-name: slideDownFadeIN;
+             animation-duration: 0.5s;
+            
+             display: flex;
+             flex-direction: column;
         }
      
          &-link-mobile {
-             letter-spacing: 0.3rem;
-             color: black;
+            font-family: 'Press Start 2P', cursive;
+            letter-spacing: 0.2rem;
+             color: green;
              text-decoration: none;
-             font-size: 24px;
+             font-size: 28px;
              font-weight: bolder;
              text-transform: uppercase;
              padding: 1.45rem 2rem;
-             border-bottom: 2px solid black;
+             padding: 1.8rem 2rem;
+             border-bottom: 1px solid white;
              font-style: italic;
+             text-align: center;
+             background-color: black;
+             width: 85%;
+             text-shadow: -2px 0 1px white, 0 2px 1px white, 2px 0 1px white, 0 -2px 1px white;
+             
+         }
+
+         &-link-mobile0 {
+            font-family: 'Press Start 2P', cursive;
+             letter-spacing: 0.2rem;
+             color: green;
+             text-decoration: none;
+             font-size: 28px;
+             font-weight: bolder;
+             text-transform: uppercase;
+             padding: 1.45rem 2rem;
+             padding: 1.8rem 2rem;
+             border-bottom: 1px solid white;
+             border-top: 1px solid white;
+             font-style: italic;
+             text-align: center;
+             background-color: black;
+             width: 85%;
+             text-shadow: -2px 0 1px white, 0 2px 1px white, 2px 0 1px white, 0 -2px 1px white;
          }
 
          &-link-mobile1 {
-            color: black;
-            letter-spacing: 0.3rem;
+            font-family: 'Press Start 2P', cursive;
+            color: green;
+            letter-spacing: 0.2rem;
             text-decoration: none;
-            font-size: 22px;
+            font-size: 28px;
             font-weight: bolder;
             text-transform: uppercase;
             padding: 1.45rem 2rem;
+            padding: 2rem 2rem;
             font-style: italic;
+            background-color: black;
+            text-align: center;
+            width: 85%;
+            border-bottom: 1px solid white;
+           
+            text-shadow: -2px 0 1px white, 0 2px 1px white, 2px 0 1px white, 0 -2px 1px white;
         }
     
     
@@ -191,18 +232,45 @@
 
     .logo-mobile{
         display:inline-block;
-        font-size: 26px;
-        margin: 1rem;
-        font-family: 'Comfortaa', cursive;
+        font-size: 22px;
+        margin: 0.5rem;
+        font-family: 'Press Start 2P', cursive;
+        margin: 0.5rem;
+        line-height: 130%;
     }
 
     .logo:hover {
         transform: none;
     }
 
+    .header-green {
+        color: green;
+        font-size: 32px;
+    }
+
     .green-name{
-        font-weight: bold;
+        font-weight: bolder;
         color: green;
     }
   }
 
+  @media only screen and (max-width: 1130px) {
+    .header-link {
+      font-size: 16px;
+    }
+
+    .logo{
+        width: 130px;
+        height: 130px;
+    }
+
+    .header-green{
+        font-size: 22px;
+    }
+
+    .header-green-m {
+        color: green;
+        font-size: 28px;
+    }
+
+  }

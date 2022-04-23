@@ -5,6 +5,8 @@ import { useState } from 'react';
 import Spinner from '../Spinner/Spinner';
 import voyage from '../../images/voyage.png';
 import logo from '../../images/logo.svg';
+import Footer from '../Footer/Footer';
+
 
 const Home = () => {
     const [spinner, setSpinner] = useState(true);
@@ -46,9 +48,11 @@ const Home = () => {
 
                 
             </div>
-            
+            <>
+            <Footer/>
+            </>
         </div>
-
+        
     )
 };
 

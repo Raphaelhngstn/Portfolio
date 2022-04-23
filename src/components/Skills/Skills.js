@@ -10,6 +10,7 @@ import pgsql from '../../images/pgsql.png';
 import redux from '../../images/redux.png';
 import Spinner from '../Spinner/Spinner';
 import { useState } from 'react';
+import Footer from '../Footer/Footer';
 
 const Skills = () => {
 
@@ -37,7 +38,9 @@ const Skills = () => {
                 <img className='skill-html' src={html5} alt='logo html'/>
                 <img className='skill-redux' src={redux} alt='logo redux'/>            
                 <img className='skill-pgsql' src={pgsql} alt='logo pgsql'/>
-            </div>        
+            </div>  
+
+            <Footer/>      
         </div>
 
     )

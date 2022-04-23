@@ -7,6 +7,7 @@ import voyage from '../../images/voyage.png';
 import panda from '../../images/panda.png';
 import soleil from '../../images/soleil.png';
 import Spinner from '../Spinner/Spinner';
+import Footer from '../Footer/Footer';
 
 const About = () => {
 
@@ -59,7 +60,7 @@ const About = () => {
         {/* <p className='about-name'>
             <span className='green'>H</span>onigstein <span className='green'>R</span>aphael - <span className='green'>A</span>ge : 30 - <span className='green'>L</span>evel : Junior
         </p> */}
-        
+        <Footer/>
     </div>
 
     

@@ -4,6 +4,7 @@ import oclock from '../../images/oclock.png';
 import toeic from '../../images/toeic.png';
 import Spinner from '../Spinner/Spinner';
 import { useState, useEffect } from 'react';
+import Footer from '../Footer/Footer';
 
 const Formation = () => {
     const [spinner, setSpinner] = useState(true);
@@ -27,7 +28,7 @@ const Formation = () => {
             <div className="formation-bloc">
                 <img className='formation-oclock' src={oclock} alt="Panda"/>
                 <p className='formation-title'>
-                    French School Web Developement <br/>Sept-2022/March-2022
+                    French School Web Developement <br/>Sept-2021/March-2022
                 </p>
 
                 <p className='formation-detail'>
@@ -62,7 +63,7 @@ const Formation = () => {
                 texte2={"TOEIC - Listening & Reading - English - Score 625 -  Level B1"}
             />         
          </div> */}
-        
+        <Footer/>
     </div>
   )
 }

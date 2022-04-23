@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Contact.scss';
 import Spinner from '../Spinner/Spinner';
 import mail from '../../images/email.png';
+import Footer from '../Footer/Footer';
 
 
 const Contact = () => {
@@ -24,7 +25,7 @@ const Contact = () => {
             Contact
         </h2>
 
-        <p className='contact-text'> Need more information? Please feel free to contact me and discuss...
+        <p className='contact-text'> Need more information? Please feel free to contact me...
         </p>
 
         <form className='contact-form'>
@@ -72,6 +73,8 @@ const Contact = () => {
             </button>
 
         </form>
+
+        <Footer/>
 
         {/* <img className='contact-mail' src={mail} alt='logo mail'/> */}
     </div>
